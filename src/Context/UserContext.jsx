@@ -13,12 +13,16 @@ const UserContext = ({children}) => {
     password: "",
     phone: "",
     company: "",
-    isAgency: false
+    isAgency: Boolean
   })
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  console.log(user);
+
+  
+  
   return (
     <div >
-      <UserDataContext.Provider value={{user, setUser, isLoggedIn, setIsLoggedIn}}>
+      <UserDataContext.Provider value={{user, setUser}}>
         {children}
       </UserDataContext.Provider>
 

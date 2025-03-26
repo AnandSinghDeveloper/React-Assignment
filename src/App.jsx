@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-
-
 import React from 'react'
 import Home from './Components/Home'
 import Login from './Components/Login'
@@ -10,7 +8,7 @@ import HomeScreen from './Components/HomeScreen'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
